@@ -9,4 +9,7 @@ plugins\miao-plugin\resources
 ```
 
 ##### 随便找个地方输入
+```
 git clone https://gitee.com/euiko/Panel.git
+```
+
