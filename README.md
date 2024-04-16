@@ -20,4 +20,4 @@ git clone https://gitee.com/euiko/Panel.git
 `测试角色面板数据 √`
 `测试圣遗物及专武数据 √`
 
-### 若有问题或者建议就提交  `**Issues**` 
+### 若有问题或者建议就提交  `Issues` 
