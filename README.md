@@ -8,11 +8,12 @@
 plugins\miao-plugin\resources
 ```
 
-#####  **随便找个地方输入** 
+#  **随便找个地方输入** 
 ```
 git clone https://gitee.com/euiko/Panel.git
 ```
 
-#  **支持什么** 
+#  **支持什么内容** 
 `星铁各命途的主角 √`
 `测试角色面板数据 √`
+`测试圣遗物及专武数据 √`
