@@ -4,7 +4,9 @@
 
 ##### 使用说明
 下载后将文件移动到
+```
 plugins\miao-plugin\resources
+```
 
 ##### 随便找个地方输入
 git clone https://gitee.com/euiko/Panel.git
