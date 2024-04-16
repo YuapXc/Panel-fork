@@ -1,6 +1,7 @@
 # miao-plugin 扩展面板
 
 ## 给miao-plugin在原有的基础上增加miao-plugin还未有的角色数据及伤害计算
+##### 当前版本:sr2.2v4 gs暂无
 
 #  **使用说明** 
 下载后将文件移动到
