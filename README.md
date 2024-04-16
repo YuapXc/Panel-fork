@@ -20,9 +20,16 @@ git clone https://gitee.com/euiko/Panel.git
 `测试角色面板数据 √`
 `测试圣遗物及专武数据 √`
 
-### 若有问题或者建议就提交  `Issues` 
+# 若有问题或者建议就提交  `Issues` 
 ##### 注意:使用后之后`#喵喵更新`可能会报冲突
 ##### 删除冲突文件再`#喵喵更新`就可以了
 ##### 但是会导致无法使用本数据包的内容
 ##### 所以等喵喵更新了后你先按上面的先更新喵喵的
 ##### 再等我同步更新,到时候再直接替换就可以了！
+
+# 使用前提
+
+* [Miao-Yunzai](https://github.com/yoimiya-kokomi/Miao-Yunzai) : 喵版Yunzai [Gitee](https://gitee.com/yoimiya-kokomi/Miao-Yunzai)
+  / [Github](https://github.com/yoimiya-kokomi/Miao-Yunzai)
+* [miao-plugin](https://github.com/yoimiya-kokomi/miao-plugin) : 喵喵插件 [Gitee](https://gitee.com/yoimiya-kokomi/miao-plugin)
+  / [Github](https://github.com/yoimiya-kokomi/miao-plugin)
