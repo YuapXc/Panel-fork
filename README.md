@@ -14,5 +14,5 @@ git clone https://gitee.com/euiko/Panel.git
 ```
 
 #  **支持什么** 
-星铁各命途的主角 √
-测试角色面板数据 √
+`星铁各命途的主角 √`
+`测试角色面板数据 √`
