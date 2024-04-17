@@ -10,7 +10,7 @@
 ```
 plugins\miao-plugin\resources
 ```
-
+![输入图片说明](1000223543.jpg)
 #  **随便找个地方输入** 
 ```
 git clone https://gitee.com/euiko/Panel.git
