@@ -3,8 +3,8 @@
  * 如character/${name}/artis.js下有角色自定义规则优先使用自定义
  */
 export const usefulAttr = {
-  波提欧v4: { hp: 0, atk: 75, def: 0, speed: 100, cpct: 100, cdmg: 100, stance: 100, heal: 0, recharge: 0, effPct: 0, effDef: 0, dmg: 100 },
-  知更鸟v4: { hp: 50, atk: 100, def: 0, speed: 100, cpct: 0, cdmg: 0, stance: 0, heal: 0, recharge: 100, effPct: 0, effDef: 0, dmg: 0 },
+  波提欧: { hp: 0, atk: 75, def: 0, speed: 100, cpct: 100, cdmg: 100, stance: 100, heal: 0, recharge: 0, effPct: 0, effDef: 0, dmg: 100 },
+  知更鸟: { hp: 50, atk: 100, def: 0, speed: 100, cpct: 0, cdmg: 0, stance: 0, heal: 0, recharge: 100, effPct: 0, effDef: 0, dmg: 0 },
   女虚数主: { hp: 75, atk: 0, def: 75, speed: 100, cpct: 0, cdmg: 0, stance: 100, heal: 0, recharge: 100, effPct: 0, effDef: 50, dmg: 0 },
   男虚数主: { hp: 75, atk: 0, def: 75, speed: 100, cpct: 0, cdmg: 0, stance: 100, heal: 0, recharge: 100, effPct: 0, effDef: 50, dmg: 0 },
   女火主: { hp: 50, atk: 0, def: 100, speed: 100, cpct: 0, cdmg: 0, stance: 0, heal: 0, recharge: 0, effPct: 100, effDef: 50, dmg: 0 },
