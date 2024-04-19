@@ -2,7 +2,7 @@
 
 ## 给miao-plugin在原有的基础上增加miao-plugin还未有的角色数据及伤害计算
 ## 还有一些小优化更方便用户使用！
-#####  _当前版本:`sr2.2v4` `gs4.6v5`_ 
+#####  _当前版本:`sr2.2v5` `gs4.6v5`_ 
 ##### 由于我懒,所以sr角色的data中cv及所属是随便填的,问题不大的！
 ##### 主要还是个人用的,不建议刚用云崽的人使用
 
@@ -33,7 +33,7 @@ git clone https://gitee.com/euiko/Panel.git
 
 # 使用前提
 
-* [Miao-Yunzai](https://github.com/yoimiya-kokomi/Miao-Yunzai) : 喵版Yunzai [Gitee](https://gitee.com/yoimiya-kokomi/Miao-Yunzai)
+[Miao-Yunzai](https://github.com/yoimiya-kokomi/Miao-Yunzai) : 喵版Yunzai [Gitee](https://gitee.com/yoimiya-kokomi/Miao-Yunzai)
   / [Github](https://github.com/yoimiya-kokomi/Miao-Yunzai)
-* [miao-plugin](https://github.com/yoimiya-kokomi/miao-plugin) : 喵喵插件 [Gitee](https://gitee.com/yoimiya-kokomi/miao-plugin)
+[miao-plugin](https://github.com/yoimiya-kokomi/miao-plugin) : 喵喵插件 [Gitee](https://gitee.com/yoimiya-kokomi/miao-plugin)
   / [Github](https://github.com/yoimiya-kokomi/miao-plugin)
