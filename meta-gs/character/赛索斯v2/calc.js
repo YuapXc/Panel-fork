@@ -207,7 +207,7 @@ export const buffs = [{
     a2Plus: ({ attr, calc, talent }) => Math.min( calc(attr.mastery) * (talent.q['伤害提升'] *0.01)*0.01)
   }
 },{
-  check: ({ params , cons }) => ( cons > 0 && params.Dc === true ) ,
+  check: ({ params , cons }) => ( cons < 7 && params.Dc === true ) ,
   title: '砂王的赐礼：贯影箭获得[a2Plus]点伤害提升',
   data: {
     a2Plus: ({ attr, calc}) => Math.min( calc(attr.mastery) * 6)
