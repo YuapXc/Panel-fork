@@ -204,7 +204,7 @@ export const buffs = [{
   title: '寂想瞑影：获得[a2Plus]点暝弦矢伤害提升',
   check: ({ params }) => params.Q === true,
   data: {
-    a2Plus: ({ talent, attr, calc }) => calc(attr.mastery) * talent.q['瞑弦矢伤害提升'] / 100
+    a2Plus: ({ talent, attr, calc }) => calc(attr.mastery) * talent.q['伤害提升'] / 100
   }
 },{
   check: ({ params , cons }) => ( cons < 7 && params.Dc === true ) ,
