@@ -225,7 +225,7 @@ export const buffs = [{
   }
 },{
   check: ({ cons }) => cons > 3 ,
-  title: '4命：雷元素伤害加成提升15%',
+  title: '4命：元素精通提升80点',
   data: {
     mastery: 80
   }
