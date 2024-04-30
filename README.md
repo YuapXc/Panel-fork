@@ -1,5 +1,5 @@
 # miao-plugin 扩展面板
-
+![输入图片说明](https://gitee.com/euiko/Panel/raw/img/1000226779.jpg)
 ## 给miao-plugin在原有的基础上增加miao-plugin还未有的角色数据及伤害计算
 ## 以及在面板下方增加触发特效后属性的模板
 ## 还有一些小优化更方便用户使用！
