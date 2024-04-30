@@ -1,5 +1,5 @@
 # miao-plugin 扩展面板
-![输入图片说明](1000226779.jpg)
+
 ## 给miao-plugin在原有的基础上增加miao-plugin还未有的角色数据及伤害计算
 ## 以及在面板下方增加触发特效后属性的模板
 ## 还有一些小优化更方便用户使用！
@@ -12,7 +12,7 @@
 ```
 plugins\miao-plugin\resources
 ```
-![输入图片说明](1000226780.jpg)
+![输入图片说明](https://gitee.com/euiko/Panel/raw/img/1000223543.jpg)
 #  **随便找个地方输入** 
 ```
 git clone https://gitee.com/euiko/Panel.git
@@ -45,7 +45,7 @@ git clone https://gitee.com/euiko/Panel.git
 miao-plugin\resources\meta-gs\character\角色名字文件夹\calc.js
 ```
 ### 然后添加至任意角色伤害计算文件最下方即可
-![输入图片说明](1000226776.jpg)
+![输入图片说明](https://gitee.com/euiko/Panel/raw/img/1000226776.jpg)
 ```
 {
   title: '触发特效后生命值',
