@@ -38,7 +38,7 @@ git clone https://gitee.com/euiko/Panel.git
 * [miao-plugin](https://github.com/yoimiya-kokomi/miao-plugin) : 喵喵插件 [Gitee](https://gitee.com/yoimiya-kokomi/miao-plugin)
   / [Github](https://github.com/yoimiya-kokomi/miao-plugin)
 
-# 角色面板下方增加触发特效后属性的模板
+## 原神角色面板下方增加触发特效后属性的模板
 ### 文件路径
 ```
 miao-plugin\resources\meta-gs\character\角色名字文件夹\calc.js
