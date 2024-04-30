@@ -37,3 +37,79 @@ git clone https://gitee.com/euiko/Panel.git
   / [Github](https://github.com/yoimiya-kokomi/Miao-Yunzai)
 * [miao-plugin](https://github.com/yoimiya-kokomi/miao-plugin) : 喵喵插件 [Gitee](https://gitee.com/yoimiya-kokomi/miao-plugin)
   / [Github](https://github.com/yoimiya-kokomi/miao-plugin)
+
+# 角色面板下方增加触发特效后属性的模板
+```
+{
+  title: '触发特效后生命值',
+  dmg: ({ attr, calc }) => {
+    return {
+      avg: Math.min(calc(attr.hp) * 1)
+    }
+  }
+}, {
+  title: '触发特效后攻击力',
+  dmg: ({ attr, calc }) => {
+    return {
+      avg: Math.min(calc(attr.atk) * 1)
+    }
+  }
+}, {
+  title: '触发特效后防御力',
+  dmg: ({ attr, calc }) => {
+    return {
+      avg: Math.min(calc(attr.def) * 1)
+    }
+  }
+}, {
+  title: '触发特效后暴击率',
+  dmg: ({ attr, calc }) => {
+    return {
+      avg: Math.min(calc(attr.cpct) * 1)
+    }
+  }
+}, {
+  title: '触发特效后暴击伤害',
+  dmg: ({ attr, calc }) => {
+    return {
+      avg: Math.min(calc(attr.cdmg) * 1)
+    }
+  }
+}, {
+  title: '触发特效后元素精通',
+  dmg: ({ attr, calc }) => {
+    return {
+      avg: Math.min(calc(attr.mastery) * 1)
+    }
+  }
+}, {
+  title: '触发特效后充能效率',
+  dmg: ({ attr, calc }) => {
+    return {
+      avg: Math.min(calc(attr.recharge) * 1)
+    }
+  }
+}, {
+  title: '触发特效后治疗加成',
+  dmg: ({ attr, calc }) => {
+    return {
+      avg: Math.min(calc(attr.heal) * 1)
+    }
+  }
+}, {
+  title: '触发特效后护盾强效',
+  dmg: ({ attr, calc }) => {
+    return {
+      avg: Math.min(calc(attr.shield) * 1)
+    }
+  }
+}, {
+  title: '当前圣遗物套装',
+  dmg: ({ artis , attr, calc, talent }) => {
+    return {
+      avg: artis ,
+      type: 'text'
+    }
+  }
+}
+```
