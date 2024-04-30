@@ -39,6 +39,8 @@ git clone https://gitee.com/euiko/Panel.git
   / [Github](https://github.com/yoimiya-kokomi/miao-plugin)
 
 # 角色面板下方增加触发特效后属性的模板
+## 添加至任意角色伤害计算文件最下方即可
+![输入图片说明](1000226776.jpg)
 ```
 {
   title: '触发特效后生命值',
