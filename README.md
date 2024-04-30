@@ -1,6 +1,7 @@
 # miao-plugin 扩展面板
 
 ## 给miao-plugin在原有的基础上增加miao-plugin还未有的角色数据及伤害计算
+## 以及在面板下方增加触发特效后属性的模板
 ## 还有一些小优化更方便用户使用！
 #####  _当前版本:`sr2.2v5` `gs4.7v2-hotfix`_ 
 ##### 由于我懒,所以sr角色的data中cv及所属是随便填的,问题不大的！
@@ -38,7 +39,7 @@ git clone https://gitee.com/euiko/Panel.git
 * [miao-plugin](https://github.com/yoimiya-kokomi/miao-plugin) : 喵喵插件 [Gitee](https://gitee.com/yoimiya-kokomi/miao-plugin)
   / [Github](https://github.com/yoimiya-kokomi/miao-plugin)
 
-## 原神角色面板下方增加触发特效后属性的模板
+# 原神角色面板下方增加触发特效后属性的模板
 ### 文件路径
 ```
 miao-plugin\resources\meta-gs\character\角色名字文件夹\calc.js
@@ -119,7 +120,7 @@ miao-plugin\resources\meta-gs\character\角色名字文件夹\calc.js
   }
 }
 ```
-## 星铁角色面板下方增加触发特效后属性的模板
+# 星铁角色面板下方增加触发特效后属性的模板
 ### 文件路径
 ```
 miao-plugin\resources\meta-sr\character\角色名字文件夹\calc.js
