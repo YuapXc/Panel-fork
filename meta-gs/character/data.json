@@ -1473,8 +1473,8 @@
   },
   "10000097": {
     "id": 10000097,
-    "name": "赛索斯v2",
-    "abbr": "赛索斯v2",
+    "name": "赛索斯v3",
+    "abbr": "赛索斯v3",
     "star": 4,
     "elem": "electro",
     "weapon": "bow",
@@ -1490,8 +1490,8 @@
   },
   "10000098": {
     "id": 10000098,
-    "name": "克洛琳德v2",
-    "abbr": "克洛琳德v2",
+    "name": "克洛琳德v3",
+    "abbr": "克洛琳德v3",
     "star": 5,
     "elem": "electro",
     "weapon": "sword",
@@ -1507,8 +1507,8 @@
   },
   "10000095": {
     "id": 10000095,
-    "name": "希格雯v2",
-    "abbr": "希格雯v2",
+    "name": "希格雯v3",
+    "abbr": "希格雯v3",
     "star": 5,
     "elem": "hydro",
     "weapon": "bow",
