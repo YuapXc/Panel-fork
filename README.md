@@ -43,6 +43,10 @@ git clone https://gitee.com/euiko/Panel.git
 ```
 miao-plugin\resources\meta-gs\character\角色名字文件夹\calc.js
 ```
+### 如果你用的梁氏插件,文件路径就是
+```
+liangshi-calc\damage\meta-gs\角色名字文件夹\calc.js
+```
 ### 然后添加至任意角色伤害计算文件下方即可
 ![输入图片说明](https://gitee.com/euiko/Panel/raw/img/1000226776.jpg)
 ```
@@ -123,6 +127,10 @@ miao-plugin\resources\meta-gs\character\角色名字文件夹\calc.js
 ### 文件路径
 ```
 miao-plugin\resources\meta-sr\character\角色名字文件夹\calc.js
+```
+### 如果你用的梁氏插件,文件路径就是
+```
+liangshi-calc\damage\meta-sr\角色名字文件夹\calc.js
 ```
 ### 然后添加至任意角色伤害计算文件下方即可
 ![输入图片说明](https://gitee.com/euiko/Panel/raw/img/1000226776.jpg)
