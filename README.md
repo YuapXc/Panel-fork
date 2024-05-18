@@ -43,7 +43,7 @@ git clone https://gitee.com/euiko/Panel.git
 ```
 miao-plugin\resources\meta-gs\character\角色名字文件夹\calc.js
 ```
-### 然后添加至任意角色伤害计算文件最下方即可
+### 然后添加至任意角色伤害计算文件下方即可
 ![输入图片说明](https://gitee.com/euiko/Panel/raw/img/1000226776.jpg)
 ```
 {
@@ -124,7 +124,8 @@ miao-plugin\resources\meta-gs\character\角色名字文件夹\calc.js
 ```
 miao-plugin\resources\meta-sr\character\角色名字文件夹\calc.js
 ```
-### 步骤和原神一样只是模板有所改动
+### 然后添加至任意角色伤害计算文件下方即可
+![输入图片说明](https://gitee.com/euiko/Panel/raw/img/1000226776.jpg)
 ```
 {
   title: '触发特效后生命值',
