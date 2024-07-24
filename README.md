@@ -1,12 +1,8 @@
 # miao-plugin 测试角色面板
-![输入图片说明](https://gitee.com/euiko/Panel/raw/img/1000226779.jpg)
+## 原神已更新至5.0v2版本 星铁已更新至2.4v5版本
 ## 给miao-plugin在原有的基础上增加miao-plugin还未有的角色数据及伤害计算
 ## 以及在面板下方增加触发特效后属性的模板
 ## 还有一些小优化更方便用户使用！
-#####  _当前版本:`sr2.4v5` `gs5.0v2`_ 
-##### 4.8v4~v5角色武器无改动
-##### 由于我懒,所以sr角色的data中cv及所属是随便填的,问题不大的！
-##### 主要还是个人用的,不建议刚用云崽的人使用
 
 #  **使用说明** 
 下载后将文件移动到下方位置并替换
@@ -28,10 +24,7 @@ git clone https://gitee.com/euiko/Panel.git
 # 若有问题或者建议就提交  `Issues` 
 ##### 注意:使用后之后`#喵喵更新`可能会报冲突
 ##### 删除冲突文件再`#喵喵更新`就可以了
-##### 但是会导致无法使用本数据包的内容
-##### 所以等喵喵更新了后你先按上面的先更新喵喵的
-##### 再等我同步更新,到时候再直接替换就可以了！
-##### 看主角面板直接把主角摆展示柜等5分钟左右再`*更新面板`就可以了
+##### 更新后再重新下载本扩展包即可！
 
 # 使用前提
 * [Miao-Yunzai](https://github.com/yoimiya-kokomi/Miao-Yunzai) : 喵版Yunzai [Gitee](https://gitee.com/yoimiya-kokomi/Miao-Yunzai)
@@ -223,3 +216,4 @@ liangshi-calc\damage\meta-sr\角色名字文件夹\calc.js
   }
 }
 ```
+![输入图片说明](https://gitee.com/euiko/Panel/raw/img/1000226779.jpg)
