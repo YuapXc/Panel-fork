@@ -1,4 +1,4 @@
-﻿let attr = (key, val) => {
+let attr = (key, val) => {
   let data = {}
   data[key] = val
   return {
@@ -20,7 +20,7 @@ export default {
     }]
   },
   识海迷坠的学者: {
-    2: attr('cpct', 6),
+    2: attr('cpct', 8),
     4: {
       title: '战技和终结技造成的伤害提高20%，施放终结技后，下一次施放战技时造成的伤害额外提高20%。',
       data: {
