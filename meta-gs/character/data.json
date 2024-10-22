@@ -1,8 +1,8 @@
 {
   "10000104": {
     "id": 10000104,
-    "name": "恰斯卡V2",
-    "abbr": "恰斯卡V2",
+    "name": "恰斯卡v3",
+    "abbr": "恰斯卡V2333",
     "star": 5,
     "elem": "anemo",
     "weapon": "bow",
@@ -18,8 +18,8 @@
   },
   "10000105": {
     "id": 10000105,
-    "name": "欧洛伦V2",
-    "abbr": "欧洛伦V2",
+    "name": "欧洛伦V3",
+    "abbr": "欧洛伦V3",
     "star": 4,
     "elem": "electro",
     "weapon": "bow",
