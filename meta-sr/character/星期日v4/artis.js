@@ -1,4 +1,4 @@
-mport { usefulAttr } from "../../artifact/artis-mark.js"
+import { usefulAttr } from "../../artifact/artis-mark.js"
 
 export default function ({ attr, artis, rule, def }) {
   if (artis.is('hp', 3)) {
