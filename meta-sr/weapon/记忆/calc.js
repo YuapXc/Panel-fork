@@ -25,7 +25,7 @@ export default function (staticIdx, keyIdx) {
       staticIdx(1, 'speed'),
       (tables) => {
         return {
-          title: '暴击伤害提高[dmg]%，普攻伤害提高[admg]%',
+          title: '暴击伤害提高[cdmg]%，普攻伤害提高[admg]%',
           data: {
             cdmg: tables[2] * 6,
             admg: tables[3] * 6
