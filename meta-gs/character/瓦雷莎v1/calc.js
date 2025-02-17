@@ -224,7 +224,7 @@ export const buffs = [{
   }
 },{
   check: ({ params , cons }) => cons > 0 && params.HSBL === true,
-  title: '连势，三重腾跃！：坠地冲击造成的伤害提升25%',
+  title: '连势，三重腾跃！：坠地冲击造成的伤害提升50%',
   data: {
     a3Dmg: 50
   }
