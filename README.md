@@ -1,6 +1,6 @@
 ### 懒🐷YuapXc的cv库
 
-修改自[euiko大佬的计算](https://gitee.com/euiko/Panel)以兼容fork版miao-plugin的角色数据
+仅修改[euiko大佬的计算文件](https://gitee.com/euiko/Panel)以兼容fork版miao-plugin的角色数据，所需的角色数据不同于原库
 
 
 # miao-plugin 测试角色面板
