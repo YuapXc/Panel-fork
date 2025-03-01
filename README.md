@@ -1,7 +1,8 @@
-### 懒🐷YuapXc的cv库
+### 懒🐷YuapXc的自用库
 
 仅修改[euiko大佬的计算文件](https://gitee.com/euiko/Panel)以兼容fork版miao-plugin的角色数据，所需的角色数据不同于原库
 
+ **强烈建议使用原库！！！** 
 
 # miao-plugin 测试角色面板
 ## 原神已更新至5.5v3版本，星铁已更新至3.2v1版本
