@@ -5,7 +5,7 @@ export const details = [{
 },{
   title: '[E]缄默，幽蝶之轻抚-主目标伤害',
   params: { L: false, X: false, team: false,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.e['目标伤害'] * attr.hp, 'e')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.e['主目标伤害'] * attr.hp, 'e')
 },{
   title: '[E]缄默，幽蝶之轻抚-相邻目标伤害',
   params: { L: false, X: false, team: false,teamA: false,teamB: false },
@@ -13,36 +13,36 @@ export const details = [{
 },{
   title: '[E+]骸爪，冥龙之环拥-首段攻击伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['技能伤害'] * attr.hp, 'e')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['首段攻击'] * attr.hp, 'e')
 },{
   title: '[E+]骸爪，冥龙之环拥-尾段攻击伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['技能伤害·死龙'] * attr.hp, 'e')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['尾段攻击'] * attr.hp, 'e')
 },{
   title: '[忆灵]擘裂冥茫的爪痕-伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me['技能伤害'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['擘裂冥茫的爪痕'] * attr.hp, 'me')
 },{
   title: '[忆灵]燎尽黯泽的焰息-首段攻击伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['技能伤害'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['首段攻击'] * attr.hp, 'me')
 },{
   title: '[忆灵]燎尽黯泽的焰息-中段攻击伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['技能伤害2'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['中段攻击'] * attr.hp, 'me')
 },{
   title: '[忆灵]燎尽黯泽的焰息-尾段攻击伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['技能伤害3'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['尾段攻击'] * attr.hp, 'me')
 },{
   title: '[忆灵]灼掠幽墟的晦翼-单次伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['灼掠幽墟的晦翼伤害'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['灼掠幽墟的晦翼'] * attr.hp, 'me')
 },{
   title: '[忆灵]灼掠幽墟的晦翼-全部伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: false },
   dmgKey: 'AE',
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['灼掠幽墟的晦翼伤害'] * attr.hp * 6, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['灼掠幽墟的晦翼'] * attr.hp * 6, 'me')
 }, {
   title: '[T]西风的驻足治疗量',
   dmg: ({ calc, attr, talent }, { heal }) => heal(calc(attr.hp) * 0.1 + 250)
@@ -60,7 +60,7 @@ export const details = [{
 },{
   title: '[蝶记缇藿-E]缄默，幽蝶之轻抚-主目标伤害',
   params: { L: false, X: false, team: true,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.e['目标伤害'] * attr.hp, 'e')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.e['主目标伤害'] * attr.hp, 'e')
 },{
   title: '[蝶记缇藿-E]缄默，幽蝶之轻抚-相邻目标伤害',
   params: { L: false, X: false, team: true,teamA: false,teamB: false },
@@ -68,35 +68,35 @@ export const details = [{
 },{
   title: '[蝶记缇藿-E+]骸爪，冥龙之环拥-首段攻击伤害',
   params: { L: true, X: false, team: true,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['技能伤害'] * attr.hp, 'e')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['首段攻击'] * attr.hp, 'e')
 },{
   title: '[蝶记缇藿-E+]骸爪，冥龙之环拥-尾段攻击伤害',
   params: { L: true, X: false, team: true,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['技能伤害·死龙'] * attr.hp, 'e')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['尾段攻击'] * attr.hp, 'e')
 },{
   title: '[蝶记缇藿-忆灵]擘裂冥茫的爪痕-伤害',
   params: { L: true, X: false, team: true,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me['技能伤害'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['擘裂冥茫的爪痕'] * attr.hp, 'me')
 },{
   title: '[蝶记缇藿-忆灵]燎尽黯泽的焰息-首段攻击伤害',
   params: { L: true, X: false, team: true,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['技能伤害'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['首段攻击'] * attr.hp, 'me')
 },{
   title: '[蝶记缇藿-忆灵]燎尽黯泽的焰息-中段攻击伤害',
   params: { L: true, X: false, team: true,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['技能伤害2'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['中段攻击'] * attr.hp, 'me')
 },{
   title: '[蝶记缇藿-忆灵]燎尽黯泽的焰息-尾段攻击伤害',
   params: { L: true, X: false, team: true,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['技能伤害3'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['尾段攻击'] * attr.hp, 'me')
 },{
   title: '[蝶记缇藿-忆灵]灼掠幽墟的晦翼-单次伤害',
   params: { L: true, X: false, team: true,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['灼掠幽墟的晦翼伤害'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['灼掠幽墟的晦翼'] * attr.hp, 'me')
 },{
   title: '[蝶记缇藿-忆灵]灼掠幽墟的晦翼-全部伤害',
   params: { L: true, X: false, team: true,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['灼掠幽墟的晦翼伤害'] * attr.hp * 6, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['灼掠幽墟的晦翼'] * attr.hp * 6, 'me')
 },{
   title: '[蝶记缇藿]当前生命值',
   params: { L: false, X: false, team: true,teamA: false,teamB: false },
@@ -136,7 +136,7 @@ export const details = [{
 },{
   title: '[蝶日缇藿-E]缄默，幽蝶之轻抚-主目标伤害',
   params: { L: false, X: false, team: false,teamA: true,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.e['目标伤害'] * attr.hp, 'e')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.e['主目标伤害'] * attr.hp, 'e')
 },{
   title: '[蝶日缇藿-E]缄默，幽蝶之轻抚-相邻目标伤害',
   params: { L: false, X: false, team: false,teamA: true,teamB: false },
@@ -144,35 +144,35 @@ export const details = [{
 },{
   title: '[蝶日缇藿-E+]骸爪，冥龙之环拥-首段攻击伤害',
   params: { L: true, X: false, team: false,teamA: true,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['技能伤害'] * attr.hp, 'e')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['首段攻击'] * attr.hp, 'e')
 },{
   title: '[蝶日缇藿-E+]骸爪，冥龙之环拥-尾段攻击伤害',
   params: { L: true, X: false, team: false,teamA: true,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['技能伤害·死龙'] * attr.hp, 'e')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['尾段攻击'] * attr.hp, 'e')
 },{
   title: '[蝶日缇藿-忆灵]擘裂冥茫的爪痕-伤害',
   params: { L: true, X: false, team: false,teamA: true,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me['技能伤害'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['擘裂冥茫的爪痕'] * attr.hp, 'me')
 },{
   title: '[蝶日缇藿-忆灵]燎尽黯泽的焰息-首段攻击伤害',
   params: { L: true, X: false, team: false,teamA: true,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['技能伤害'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['首段攻击'] * attr.hp, 'me')
 },{
   title: '[蝶日缇藿-忆灵]燎尽黯泽的焰息-中段攻击伤害',
   params: { L: true, X: false, team: false,teamA: true,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['技能伤害2'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['中段攻击'] * attr.hp, 'me')
 },{
   title: '[蝶日缇藿-忆灵]燎尽黯泽的焰息-尾段攻击伤害',
   params: { L: true, X: false, team: false,teamA: true,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['技能伤害3'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['尾段攻击'] * attr.hp, 'me')
 },{
   title: '[蝶日缇藿-忆灵]灼掠幽墟的晦翼-单次伤害',
   params: { L: true, X: false, team: false,teamA: true,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['灼掠幽墟的晦翼伤害'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['灼掠幽墟的晦翼'] * attr.hp, 'me')
 },{
   title: '[蝶日缇藿-忆灵]灼掠幽墟的晦翼-全部伤害',
   params: { L: true, X: false, team: false,teamA: true,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['灼掠幽墟的晦翼伤害'] * attr.hp * 6, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['灼掠幽墟的晦翼'] * attr.hp * 6, 'me')
 },{
   title: '[蝶日缇藿]当前生命值',
   params: { L: false, X: false, team: false,teamA: true,teamB: false },
@@ -212,7 +212,7 @@ export const details = [{
 },{
   title: '[蝶阮缇藿-E]缄默，幽蝶之轻抚-主目标伤害',
   params: { L: false, X: false, team: false,teamA: false,teamB: true },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.e['目标伤害'] * attr.hp, 'e')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.e['主目标伤害'] * attr.hp, 'e')
 },{
   title: '[蝶阮缇藿-E]缄默，幽蝶之轻抚-相邻目标伤害',
   params: { L: false, X: false, team: false,teamA: false,teamB: true },
@@ -220,35 +220,35 @@ export const details = [{
 },{
   title: '[蝶阮缇藿-E+]骸爪，冥龙之环拥-首段攻击伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: true },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['技能伤害'] * attr.hp, 'e')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['首段攻击'] * attr.hp, 'e')
 },{
   title: '[蝶阮缇藿-E+]骸爪，冥龙之环拥-尾段攻击伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: true },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['技能伤害·死龙'] * attr.hp, 'e')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['尾段攻击'] * attr.hp, 'e')
 },{
   title: '[蝶阮缇藿-忆灵]擘裂冥茫的爪痕-伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: true },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me['技能伤害'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['擘裂冥茫的爪痕'] * attr.hp, 'me')
 },{
   title: '[蝶阮缇藿-忆灵]燎尽黯泽的焰息-首段攻击伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: true },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['技能伤害'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['首段攻击'] * attr.hp, 'me')
 },{
   title: '[蝶阮缇藿-忆灵]燎尽黯泽的焰息-中段攻击伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: true },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['技能伤害2'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['中段攻击'] * attr.hp, 'me')
 },{
   title: '[蝶阮缇藿-忆灵]燎尽黯泽的焰息-尾段攻击伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: true },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['技能伤害3'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['尾段攻击'] * attr.hp, 'me')
 },{
   title: '[蝶阮缇藿-忆灵]灼掠幽墟的晦翼-单次伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: true },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['灼掠幽墟的晦翼伤害'] * attr.hp, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['灼掠幽墟的晦翼'] * attr.hp, 'me')
 },{
   title: '[蝶阮缇藿-忆灵]灼掠幽墟的晦翼-全部伤害',
   params: { L: true, X: false, team: false,teamA: false,teamB: true },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.me2['灼掠幽墟的晦翼伤害'] * attr.hp * 6, 'me')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.q2['灼掠幽墟的晦翼'] * attr.hp * 6, 'me')
 },{
   title: '[蝶阮缇藿]当前生命值',
   params: { L: false, X: false, team: false,teamA: false,teamB: true },
