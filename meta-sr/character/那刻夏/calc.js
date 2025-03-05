@@ -3,10 +3,10 @@ export const details = [{
   dmg: ({ talent }, dmg) => dmg(talent.a['技能伤害'], 'a')
 }, {
   title: '[E]分形，驱逐虚知-单次伤害',
-  dmg: ({ talent }, dmg) => dmg(talent.e['技能伤害'], 'e')
+  dmg: ({ talent }, dmg) => dmg(talent.e['目标伤害'], 'e')
 }, {
   title: '[E]分形，驱逐虚知-全部伤害',
-  dmg: ({ talent }, dmg) => dmg(talent.e['技能伤害'] + talent.e['随机伤害'] * 4, 'e')
+  dmg: ({ talent }, dmg) => dmg(talent.e['目标伤害'] + talent.e['目标伤害'] * 4, 'e')
 }, {
   title: '[Q]生息破土，世界塑造-伤害',
   dmgKey: 'AE',
