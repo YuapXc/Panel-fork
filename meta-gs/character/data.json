@@ -1,8 +1,8 @@
 {
   "10000111": {
     "id": 10000111,
-    "name": "瓦雷莎v4",
-    "abbr": "瓦雷莎v4",
+    "name": "瓦雷莎v5",
+    "abbr": "瓦雷莎v5",
     "star": 5,
     "elem": "electro",
     "weapon": "catalyst",
@@ -19,8 +19,8 @@
   },
   "10000110": {
     "id": 10000110,
-    "name": "伊安珊v4",
-    "abbr": "伊安珊v4",
+    "name": "伊安珊v5",
+    "abbr": "伊安珊v5",
     "star": 4,
     "elem": "electro",
     "weapon": "polearm",
