@@ -5,11 +5,22 @@
  **强烈建议使用原库！！！** 
 
 # miao-plugin 测试角色面板
-## 原神已更新至5.5v3版本，星铁已更新至3.2v1版本
+## 原神已更新至5.5v5版本，星铁已更新至3.2v3版本
 ## 给miao-plugin在原有的基础上增加miao-plugin还未有的角色数据及伤害计算
 ## 以及在面板下方增加触发特效后属性的模板.
 ## 还有一些小优化更方便用户使用！
 ## 仅提供测试期间的数据，正式服上了请使用miao-plugin的角色数据及伤害计算.
+注：目前miao-plugin的gitee源因为不可阻挡的原因无法使用，需要切换到github源请在 Yunzai-Bot 根目录夹打开终端执行以下指令
+
+```
+git -C plugins/miao-plugin remote set-url origin https://github.com/yoimiya-kokomi/miao-plugin
+```
+
+如果网络较差可使用代理加速服务
+
+```
+git -C plugins/miao-plugin remote set-url origin https://ghfast.top/https://github.com/yoimiya-kokomi/miao-plugin
+```
 
 #  **使用说明** 
 下载后将文件移动到下方位置并替换
