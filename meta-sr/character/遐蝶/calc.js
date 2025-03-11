@@ -65,7 +65,7 @@ export const details = [{
 },{
   title: '[蝶记缇藿-E+]骸爪，冥龙之环拥-首段攻击伤害',
   params: { L: true, X: false, team: true,teamA: false,teamB: false },
-  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['技能攻击'] * attr.hp, 'e')
+  dmg: ({ talent, attr }, { basic }) => basic(talent.e2['技能伤害'] * attr.hp, 'e')
 },{
   title: '[蝶记缇藿-E+]骸爪，冥龙之环拥-尾段攻击伤害',
   params: { L: true, X: false, team: true,teamA: false,teamB: false },
