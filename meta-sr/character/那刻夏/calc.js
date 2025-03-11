@@ -2,14 +2,22 @@ export const details = [{
   title: '[A]楚痛，酿造实识-伤害',
   dmg: ({ talent }, dmg) => dmg(talent.a['技能伤害'], 'a')
 }, {
-  title: '[E]分形，驱逐虚知-单次伤害',
+  title: '[E-单敌人]分形，驱逐虚知-单次伤害',
   dmg: ({ talent }, dmg) => dmg(talent.e['目标伤害'], 'e')
 }, {
-  title: '[E]分形，驱逐虚知-全部伤害',
+  title: '[E-单敌人]分形，驱逐虚知-全部伤害',
+  dmg: ({ talent }, dmg) => dmg(talent.e['目标伤害'] + talent.e['目标伤害'] * 4, 'e')
+}, {
+  title: '[E-五敌人]分形，驱逐虚知-单次伤害',
+  params: { W: true},
+  dmg: ({ talent }, dmg) => dmg(talent.e['目标伤害'], 'e')
+}, {
+  title: '[E-五敌人]分形，驱逐虚知-全部伤害',
+  params: { W: true},
+  dmgKey: 'AE',
   dmg: ({ talent }, dmg) => dmg(talent.e['目标伤害'] + talent.e['目标伤害'] * 4, 'e')
 }, {
   title: '[Q]生息破土，世界塑造-伤害',
-  dmgKey: 'AE',
   dmg: ({ talent }, dmg) => dmg(talent.q['技能伤害'], 'q')
 }, {
   title: '[2命]生息破土，世界塑造-额外伤害',
@@ -25,6 +33,12 @@ export const defDmgKey = 'AE'
 export const mainAttr = 'atk,cpct,cdmg'
 
 export const buffs = [{
+  check: ({ cons, params }) => params.W === true,
+  title: '分形，驱逐虚知：战技造成的伤害提高75%',
+  data: {
+    edmg: 75
+  }
+},{
   title: '质性揭露：造成的伤害提高[dmg]%',
   data: {
     dmg: ({ talent, attr }) => talent.t['伤害提高'] * 100
@@ -46,22 +60,22 @@ export const buffs = [{
     enemyDef: 16
   }
 }, {
-  title: '2命：速度提高12%',
+  title: '2命：全属性抗性降低20%',
   cons: 2,
   data: {
-    speedPct: 12
+    kx: 20
   }
 }, {
-  title: '4命：攻击力提高120%',
+  title: '4命：攻击力提高60%',
   cons: 4,
   data: {
-    atkPct: 120
+    atkPct: 60
   }
 }, {
-  title: '6命：造成的伤害提高15%',
+  title: '6命：造成的伤害提高30%',
   cons: 6,
   data: {
-    dmg: 15
+    dmg: 30
   }
 }]
 
