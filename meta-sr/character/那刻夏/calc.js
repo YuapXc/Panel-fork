@@ -34,9 +34,9 @@ export const mainAttr = 'atk,cpct,cdmg'
 
 export const buffs = [{
   check: ({ cons, params }) => params.W === true,
-  title: '分形，驱逐虚知：战技造成的伤害提高75%',
+  title: '分形，驱逐虚知：战技造成的伤害提高100%',
   data: {
-    edmg: 75
+    dmg: 100
   }
 },{
   title: '质性揭露：造成的伤害提高[dmg]%',
@@ -44,9 +44,9 @@ export const buffs = [{
     dmg: ({ talent, attr }) => talent.t['伤害提高'] * 100
   }
 },{
-  title: '质性的嬗变：无视21%的防御力',
+  title: '质性的嬗变：无视28%的防御力',
   data: {
-    ignore: 21
+    ignore: 28
   }
 }, {
   title: '必要的留白：暴击伤害提高140%',
