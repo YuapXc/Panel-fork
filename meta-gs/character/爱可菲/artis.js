@@ -1,4 +1,4 @@
-export default function ({ attr, weapon, rule, def }) {
+export default function ({ attr, artis, rule, def }) {
   if ( attr.heal > 10 ) {
     return rule('爱可菲-治疗', { hp: 0, atk: 100, cpct: 0, cdmg:0, dmg: 0, recharge: 100 , heal: 100 })
   }
