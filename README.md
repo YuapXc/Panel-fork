@@ -1,11 +1,11 @@
 ### 懒🐷YuapXc的自用库
 
-仅修改[euiko大佬的计算文件](https://gitee.com/euiko/Panel)以兼容fork版miao-plugin的角色数据，所需的角色数据不同于原库
+仅修改[euiko大佬的计算文件](https://gitee.com/euiko/Panel)以兼容fork版miao-plugin的角色数据，所需的角色数据可能不同于原库（可能报错NaN）
 
- **强烈建议使用原库！！！** 
+ **强烈推荐使用原库！！！** 
 
 # miao-plugin 测试角色面板
-## 原神已更新至5.5v5版本，星铁已更新至3.2v5版本
+## 原神已更新至5.6v1版本，星铁已更新至3.2v5版本
 ## 给miao-plugin在原有的基础上增加miao-plugin还未有的角色数据及伤害计算
 ## 以及在面板下方增加触发特效后属性的模板.
 ## 还有一些小优化更方便用户使用！
