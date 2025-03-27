@@ -1,6 +1,6 @@
 export const details = [{
   title: '[A]后厨手艺普通攻击伤害',
-  dmg: ({ talent, attr, cons }, dmg) => dmg(talent.a['一段伤害'] + talent.a['二段伤害'] + talent.a['三段伤害'][0] + talent.a['三段伤害'][1], 'a')
+  dmg: ({ talent, attr, cons }, dmg) => dmg(talent.a['一段伤害'] + talent.a['二段伤害'] + talent.a['三段伤害'], 'a')
 }, {
   title: '[A+]后厨手艺重击伤害',
   dmg: ({ talent, attr, cons }, dmg) => dmg(talent.a['重击伤害'], 'a2')
