@@ -1,4 +1,4 @@
-export default function ({ attr, rule, def, artis }) {
+export default function ({ attr, weapon, rule, def, artis }) {
   if (artis.is('cpct', 5)) {
     return rule('伊法-输出', { atk: 75, cpct: 100, cdmg: 100, mastery: 75, dmg: 100, recharge: 55})
   }
