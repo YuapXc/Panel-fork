@@ -113,15 +113,8 @@ export default function (staticIdx, keyIdx) {
       keyIdx('战技和终结技造成的伤害提高[eDmg]%', { eDmg: 2, qDmg: 2 })
     ],
     生命当付之一炬: [
-      staticIdx(1, 'cpct'),
-      (tables) => {
-        return {
-          title: '敌方目标防御力降低[enemyDef]%',
-          data: {
-            enemyDef: tables[2] * 2
-          }
-        }
-      }
+      staticIdx(1, 'dmg'),
+      keyIdx('敌方目标防御力降低[enemyDef]%', 'enemyDef', 2)
     ],
     宇宙大生意: [
       staticIdx(1, 'atkPct'),

@@ -40,6 +40,10 @@ export default function (staticIdx, keyIdx) {
     '让告别，更美一些': [
       staticIdx(1, 'hpPct'),
       keyIdx('无视目标防御力[ignore]%', 'ignore', 2)
+    ],
+    '愿虹光永驻天空': [
+      staticIdx(1, 'speedPct'),
+      keyIdx('使敌方全体受到的伤害提高[enemydmg]%', 'enemydmg', 4)
     ]
   }
 }
