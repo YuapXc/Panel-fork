@@ -35,14 +35,14 @@ export const mainAttr = "atk,cpct,cdmg"
 
 export const buffs = [
   {
-    title: "天赋：追加攻击触发，造成等同于赛飞儿攻击力[tDmg]%的量子属性伤害",
+    title: '天赋：追加攻击触发，造成等同于赛飞儿攻击力[tDmg]%的量子属性伤害',
     tree: 1,
     data: {
       tDmg: ({ talent }) => talent.t["技能伤害"] * 100
     }
   },
   {
-    title: "战技：攻击力提高[_atkBuff]%",
+    title: '战技：攻击力提高[_atkBuff]%',
     tree: 1,
     data: {
       _atkBuff: ({ talent }) => talent.e["攻击力提高"] * 100
@@ -63,14 +63,21 @@ export const buffs = [
     }
   },
   {
-    title: "赛飞儿1命：目标受到的伤害提高[enemydmg]%",
+    title: '赛飞儿1命：目标受到的伤害提高[enemydmg]%',
     cons: 1,
     data: {
       enemydmg: 25
     }
   },
   {
-    title: "赛飞儿6命：天赋追加攻击伤害提高[tdmg]%",
+    title: '赛飞儿2命：暴击伤害提高80%',
+    cons: 2,
+    data: {
+      cdmg: 80
+    }
+  },
+  {
+    title: '赛飞儿6命：天赋追加攻击伤害提高[tdmg]%',
     cons: 6,
     data: {
       tdmg: 350
@@ -78,4 +85,4 @@ export const buffs = [
   }
 ]
 
-export const createdBy = "YuapXc"
+export const createdBy = 'YuapXc'

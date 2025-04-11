@@ -50,7 +50,7 @@ export const details = [
   },
   {
     title: "终结技生命上限提升",
-    dmg: ({ talent, attr, calc }, { buff }) => buff(calc(attr.hp) * talent.q["生命上限提高·百分比"] + talent.q["生命上限提高·固定值"])
+    dmg: ({ talent, attr, calc }, { heal }) => heal(calc(attr.hp) * talent.q["生命上限提高·百分比"] + talent.q["生命上限提高·固定值"])
   }
 ]
 
@@ -106,25 +106,25 @@ export const buffs = [
     cdmg: 400
   }
 },{
-    title: "天赋效果：伊卡伤害提高[damageBoost]%",
+    title: '天赋效果：伊卡伤害提高[damageBoost]%',
     tree: 1,
     data: {
       damageBoost: ({ talent }) => talent.t["伊卡伤害提高"] * 100
     }
 },{
-    title: "终结技效果：全体生命上限提升[teamHpBoost]%",
+    title: '终结技效果：全体生命上限提升[teamHpBoost]%',
     tree: 1,
     data: {
       teamHpBoost: ({ talent }) => talent.q["生命上限提高·百分比"] * 100
     }
 },{
-    title: "命座1效果：生命上限提高额外[hpBoost]%",
+    title: '命座1效果：生命上限提高额外[hpBoost]%',
     cons: 1,
     data: {
       hpBoost: 50
     }
 },{
-    title: "命座2效果：速度提高[speed]%",
+    title: '命座2效果：速度提高[speed]%',
     cons: 2,
     data: {
       speed: 30
@@ -136,7 +136,7 @@ export const buffs = [
       cdmg: ({ talent, attr }) => (attr.speed - 200) * 0.02
     }
 },{
-    title: "命座6效果：全属性抗性穿透提高[kx]%",
+    title: '命座6效果：全属性抗性穿透提高[kx]%',
     cons: 6,
     data: {
       kx: 24
