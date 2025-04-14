@@ -1,19 +1,17 @@
 ### 懒🐷YuapXc的自用库「 **自用！** 」
 
-仅修改[euiko大佬的计算文件](https://gitee.com/euiko/Panel)以兼容fork版miao-plugin的角色数据，所需的角色数据可能不同于原库（可能报错NaN）
+仅修改[euiko大佬的计算文件](https://gitee.com/euiko/Miao-Panel)以兼容fork版miao-plugin的角色数据，所需的角色数据可能不同于原库（可能报错NaN）
 
  **强烈推荐使用原库！！！** 
 
-### 介于在gitee同步完HSR3.3v1数据后，本库和原库均遭gitee封禁，后期若无再公开的角色数据，可能仅对新角色伤害计算进行研究更新
 
 ### 以下为原库的README
 
 # miao-plugin 测试角色面板
-## 原神已更新至5.6v3版本，星铁已更新至3.3v1版本
+## 原神已更新至5.6v4版本，星铁已更新至3.3v1版本
 ## 给miao-plugin在原有的基础上增加miao-plugin还未有的角色数据及伤害计算
 ## 以及在面板下方增加触发特效后属性的模板.
 ## 还有一些小优化更方便用户使用！
-## [个人自用小插件：https://gitee.com/euiko/Ehyaexample](https://gitee.com/euiko/Ehyaexample)
 ## 仅提供测试期间的数据，正式服上了请使用miao-plugin的角色数据及伤害计算.
 注：目前miao-plugin的gitee源因为不可阻挡的原因无法使用，需要切换到github源请在 Yunzai-Bot 根目录夹打开终端执行以下指令
 
@@ -35,7 +33,7 @@ plugins\miao-plugin\resources
 ![输入图片说明](https://gitee.com/euiko/Panel/raw/img/1000223543.jpg)
 #  **随便找个地方输入** 
 ```
-git clone https://gitee.com/euiko/Panel.git
+git clone https://gitee.com/euiko/Miao-Panel.git
 ```
 
 #  **支持什么内容** 
