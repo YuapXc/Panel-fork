@@ -1,8 +1,8 @@
 {
   "10000113": {
     "id": 10000113,
-    "name": "伊法v4",
-    "abbr": "伊法v4",
+    "name": "伊法v5",
+    "abbr": "伊法v5",
     "star": 4,
     "elem": "anemo",
     "weapon": "catalyst",
@@ -18,8 +18,8 @@
   },
   "10000112": {
     "id": 10000112,
-    "name": "爱可菲v4",
-    "abbr": "爱可菲v4",
+    "name": "爱可菲v5",
+    "abbr": "爱可菲v5",
     "star": 5,
     "elem": "cryo",
     "weapon": "polearm",
