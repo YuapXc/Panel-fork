@@ -1,59 +1,33 @@
 export const details = [{
-  title: '[A]普通攻击伤害',
-  dmg: ({ talent, attr, cons }, dmg) => dmg(talent.a['一段伤害'] + talent.a['二段伤害'] + talent.a['三段伤害'], 'a')
+  title: 'E秘药弹伤害',
+  dmg: ({ talent }, dmg) => dmg(talent.e['秘药弹伤害'], 'e,nightsoul')
 }, {
-  title: '[A]重击伤害',
-  dmg: ({ talent, attr, cons }, dmg) => dmg(talent.a['重击伤害'], 'a')
-}, {
-  title: '[A]下坠期间伤害',
-  dmg: ({ talent, attr, cons }, dmg) => dmg(talent.a['下坠期间伤害'], 'a')
-}, {
-  title: '[A]低空坠地冲击伤害',
-  dmg: ({ talent, attr, cons }, dmg) => dmg(talent.a['低空/高空坠地冲击伤害'][0], 'a')
-}, {
-  title: '[A]高空坠地冲击伤害',
-  dmg: ({ talent, attr, cons }, dmg) => dmg(talent.a['低空/高空坠地冲击伤害'][1], 'a')
-}, {
-  title: '[E]秘药弹伤害',
-  dmg: ({ talent, attr, cons }, dmg) => dmg(talent.e['秘药弹伤害'], 'e')
-}, {
-  title: `[E]秘药弹命中治疗量`,
-  dmgKey: 'AE',
-  dmg: ({ talent, attr, calc }, { heal }) =>
-    heal(talent.e['秘药弹命中治疗量2'][0] * calc(attr.mastery) / 100 + talent.e['秘药弹命中治疗量2'][1])
-}, {
-  title: '[Q]复合镇静域伤害',
-  dmg: ({ talent, attr, cons }, dmg) => dmg(talent.q['技能伤害'], 'q')
-}, {
-  title: '[Q]镇静标记伤害',
-  dmg: ({ talent, attr, cons }, dmg) => dmg(talent.q['镇静标记伤害'], 'q')
-}]
-
-export const defDmgKey = 'AE'
-export const mainAttr = 'atk,hp,cpct,cdmg,heal'
-
-export const buffs = [{
-  title: '互助救援协议：元素精通提升80点',
-  data: {
-    mastery: 80
+  title: 'E秘药弹治疗量',
+  dmg: ({ talent, attr }, { heal }) => {
+    return heal(talent.e['秘药弹命中治疗量2'][0] / 100 * attr.mastery + talent.e['秘药弹命中治疗量2'][1])
   }
 }, {
-  title: '4命：元素精通提升100点',
+  title: 'Q技能伤害',
+  dmg: ({ talent }, dmg) => dmg(talent.q['技能伤害'], 'q,nightsoul')
+}, {
+  title: '扩散反应伤害',
+  dmg: ({}, { reaction }) => reaction('swirl')
+}, {
+  title: '6命额外秘药弹伤害',
+  cons: 6,
+  dmg: ({ attr, calc }, { basic }) => basic(calc(attr.atk) * 120 / 100, 'a,nightsoul')
+}]
+
+export const defParams = { Nightsoul: true }
+export const defDmgIdx = 0
+export const mainAttr = 'atk,cpct,cdmg,mastery'
+
+export const buffs = [{
+  title: '伊法4命：施放元素爆发后，伊法的元素精通提升[mastery]点',
   cons: 4,
   data: {
     mastery: 100
   }
-}, {
-  title: '6命：秘药弹额外伤害提升20%',
-  cons: 6,
-  data: {
-    dmg: 20
-  }
-}, {
-  title: '被动天赋：扩散反应伤害提升20%',
-  data: {
-    swirlDmg: 20
-  }
 }]
 
-export const createdBy = 'YuapXc'
+export const createdBy = '冰翼'
