@@ -74,19 +74,19 @@ export const buffs = [{
   check: ({ params }) => params.xujing === true,
   title: '丝柯克元素爆发：施放极恶技·尽时，汲取了虚境裂隙，则会依据汲取的虚境裂隙枚数，使本次普通攻击造成的伤害进一步提高',
   data: {
-    qDmg: ({ talent }) => talent.q['汲取0/1/2/3枚虚境裂隙伤害提升'][3]
+    qDmg: ({ attr, calc, talent }) => calc(attr.atk) * talent.q['汲取0/1/2/3枚虚境裂隙伤害提升'][3] / 100
   }
 }, {
   title: '丝柯克2命：元素爆发极恶技·灭依据蛇之狡谋提升伤害时，至多额外计入12点蛇之狡谋',
   cons: 2,
   data: {
-    qPlus: ({ talent, params }) => params.snake_cunning >= 50 ? talent.q['蛇之狡谋加成'] * 12 : 0
+    qPlus: ({ attr, calc, talent }) => calc(attr.atk) * talent.q['蛇之狡谋加成'] / 100 * 12
   }
 }, {
   check: ({ params }) => params.snake_cunning > 50,
   title: '丝柯克元素爆发：依据施放时丝柯克拥有的蛇之狡谋超过50点的部分，每1点蛇之狡谋都将提升本次元素爆发造成的伤害',
   data: {
-    qPlus: ({ talent, params }) => params.snake_cunning > 50 ? talent.q['蛇之狡谋加成'] * 12 : 0
+    qPlus: ({ attr, calc, talent }) => calc(attr.atk) * talent.q['蛇之狡谋加成'] / 100 * 12
   }
 }, {
   title: '丝柯克4命：死河渡断效果会使丝柯克的攻击力提升[atkPct]%',
