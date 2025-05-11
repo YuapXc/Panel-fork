@@ -18,15 +18,15 @@ export const details = [{
   dmg: ({ talent }, dmg) => dmg(talent.q['技能伤害'], 'q')
 }, {
   title: '[Q]纯耀的祷咏护盾量',
-  dmg: ({ talent, attr, cons, calc }, { shield }) => 
-    shield((talent.q["圣眷护盾吸收量2"][0] / 100 + (cons > 0 ? 0.25 : 0)) * calc(attr.hp) + talent.q["圣眷护盾吸收量2"][1])
+  dmg: ({ talent, attr, calc }, { shield }) => 
+    shield(talent.q["圣眷护盾吸收量2"][0] / 100 * calc(attr.hp) + talent.q["圣眷护盾吸收量2"][1])
 }]
 
 export const defDmgIdx = 6
 export const mainAttr = 'atk,cpct,cdmg,hp'
 
 export const buffs = [{
-  title: '2命：塔利雅消耗元素爆发纯耀的祷咏中的「祝颂」效果唤出圣眷护盾后，处于圣眷护盾庇护下的角色，护盾强效提升[shieldAdd]%，持续12秒',
+  title: '2命：塔利雅消耗元素爆发纯耀的祷咏中的「祝颂」效果唤出圣眷护盾后，处于圣眷护盾庇护下的角色，护盾强效提升[shield]%，持续12秒',
   cons: 2,
   data: {
     shield: 25
