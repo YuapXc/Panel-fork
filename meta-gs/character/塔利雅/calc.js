@@ -18,7 +18,7 @@ export const details = [{
   dmg: ({ talent }, dmg) => dmg(talent.q['技能伤害'], 'q')
 }, {
   title: '[Q]纯耀的祷咏护盾量',
-  dmg: ({ talent, attr, cons }, { shield }) => 
+  dmg: ({ talent, attr, cons, calc }, { shield }) => 
     shield((talent.q["圣眷护盾吸收量2"][0] / 100 + (cons > 0 ? 0.25 : 0)) * calc(attr.hp) + talent.q["圣眷护盾吸收量2"][1])
 }]
 
