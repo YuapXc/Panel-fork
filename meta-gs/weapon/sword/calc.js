@@ -7,13 +7,6 @@ export default function (step, staticStep) {
         ePlus: ({ attr, refine }) => attr.def * step(40)[refine] / 100
       }
     },
-    苍耀: {
-      title: '攻击力提升[atkPct]%，暴击伤害提升[cdmg]%',
-      refine: {
-        atkPct: [48, 60, 72, 84, 96],
-        cdmg: [40, 50, 60, 70, 80]
-      }
-    },
     腐殖之剑: {
       title: '元素战技的伤害增加[eDmg]%，暴击率提高[eCpct]%',
       refine: {
@@ -286,6 +279,13 @@ export default function (step, staticStep) {
         a2Dmg: step(20),
         aCpct: step(8),
         a2Cpct: step(8)
+      }
+    },
+    苍耀: {
+      title: '元素能量为0时攻击力提升[atkPct]%,暴击伤害提升[cdmg]%',
+      refine: {
+        atkPct: step(48),
+        cdmg: step(40)
       }
     }
   }
