@@ -11,7 +11,7 @@ export const details = [{
   title: '[A+]高空坠地冲击伤害',
   dmg: ({ talent }, dmg) => dmg(talent.a['低空/高空坠地冲击伤害'][1], 'a')
 }, {
-  title: '[E]极恶技·闪(五段)总伤害(七相一闪)',
+  title: '[E]极恶技·闪总伤害(七相一闪)',
   params: { seven_phase: true },
   dmg: ({ talent }, dmg) => dmg(talent.e['一段伤害']+talent.e['二段伤害']+talent.e['三段伤害']+talent.e['四段伤害']+talent.e['五段伤害'], 'e')
 }, {
@@ -22,8 +22,8 @@ export const details = [{
   title: '[Q]极恶技·灭(五段+最终一击)伤害',
   params: { snake_cunning: 50 },
   dmg: ({ talent }, dmg) => {
-    const qDmg = dmg(talent.q['技能伤害'], 'q')
-    const finalDmg = dmg(talent.q['最终一击技能伤害'], 'q')
+    const qDmg = dmg(talent.q['斩击伤害'], 'q')
+    const finalDmg = dmg(talent.q['斩击最终段伤害'], 'q')
     return {
       dmg: qDmg.dmg + finalDmg.dmg,
       avg: qDmg.avg + finalDmg.avg
@@ -33,19 +33,19 @@ export const details = [{
   title: '[Q]极恶技·灭总伤害(满蛇之狡谋)',
   params: { snake_cunning: 62 },
   dmg: ({ talent }, dmg) => {
-    const qDmg = dmg(talent.q['技能伤害'], 'q')
-    const finalDmg = dmg(talent.q['最终一击技能伤害'], 'q')
+    const qDmg = dmg(talent.q['斩击伤害'], 'q')
+    const finalDmg = dmg(talent.q['斩击最终段伤害'], 'q')
     return {
       dmg: qDmg.dmg + finalDmg.dmg,
       avg: qDmg.avg + finalDmg.avg
     }
   }
 },{
-  title: '[Q+]极恶技·尽总伤害(满蛇之狡谋)',
+  title: '[Q+]极恶技·尽总伤害(满蛇之狡谋&虚境裂隙)',
   params: { snake_cunning: 62, seven_phase: true, xujing: true },
   dmg: ({ talent }, dmg) => {
-    const qDmg = dmg(talent.q['技能伤害'], 'q')
-    const finalDmg = dmg(talent.q['最终一击技能伤害'], 'q')
+    const qDmg = dmg(talent.q['斩击伤害'], 'q')
+    const finalDmg = dmg(talent.q['斩击最终段伤害'], 'q')
     return {
       dmg: qDmg.dmg + finalDmg.dmg,
       avg: qDmg.avg + finalDmg.avg
@@ -65,10 +65,10 @@ export const buffs = [{
   }
 }, {
   check: ({ params }) => params.seven_phase === true,
-  title: '丝柯克2命：处于七相一闪模式下时，普通攻击造成的伤害提升60%',
+  title: '丝柯克2命：丝柯克施放七相一闪模式下的极恶技·尽后的12.5秒内，攻击力提升60%',
   cons: 2,
   data: {
-    qDmg: 60
+    atkPct: 60
   }
 }, {
   check: ({ params }) => params.xujing === true,
@@ -77,10 +77,10 @@ export const buffs = [{
     qDmg: ({ attr, calc, talent }) => calc(attr.atk) * talent.q['汲取0/1/2/3枚虚境裂隙伤害提升'][3] / 100
   }
 }, {
-  title: '丝柯克2命：元素爆发极恶技·灭依据蛇之狡谋提升伤害时，至多额外计入12点蛇之狡谋',
+  title: '丝柯克2命：元素爆发极恶技·灭依据蛇之狡谋提升伤害时，至多额外计入10点蛇之狡谋',
   cons: 2,
   data: {
-    qPlus: ({ attr, calc, talent }) => calc(attr.atk) * talent.q['蛇之狡谋加成'] / 100 * 12
+    qPlus: ({ attr, calc, talent }) => calc(attr.atk) * talent.q['蛇之狡谋加成'] / 100 * 10
   }
 }, {
   check: ({ params }) => params.snake_cunning > 50,
