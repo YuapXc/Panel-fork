@@ -53,10 +53,10 @@ export const buffs = [
         }
     },
     {
-        title: "[天赋+]命运•此躯即神：变身期间攻击力提高[dmg]%",
+        title: "[天赋+]命运•此躯即神：变身期间攻击力提高[atkPct]%",
         check: ({ params }) => params.CQJS === true,
         data: {
-            dmg: ({ talent }) => talent.t2["攻击力提高"] * 100
+            atkPct: ({ talent }) => talent.t2["攻击力提高"] * 100
         }
     },
     {
@@ -66,9 +66,9 @@ export const buffs = [
         }
     },
     {
-        title: "照见英雄本色：进入战斗或变身结束时，攻击力提高[dmg]%。该效果最多叠加2层",
+        title: "照见英雄本色：进入战斗或变身结束时，攻击力提高[atkPct]%。该效果最多叠加2层",
         data: {
-            dmg: 50 * 2
+            atkPct: 50 * 2
         }
     },
     {
@@ -79,7 +79,7 @@ export const buffs = [
         }
     },
     {
-        title: "2命：█████施放攻击造成的伤害为原伤害的[dmg]%",
+        title: "2命：█████施放攻击造成的伤害为原伤害的120%",
         cons: 2,
         check: ({ params }) => params.CQJS === true,
         data: {
