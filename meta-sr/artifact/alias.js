@@ -83,6 +83,8 @@ export const artiSetAbbr = {
   渊思寂虑的巨树: '巨树',
   烈阳惊雷的女武神: '武神',
   恶海逐波的船长: '船长',
+  沉欢醉饮的海隅: '海隅',
+  妖精织梦的乐园: '妖精',
 }
 
 export const aliasCfg = {

@@ -7,6 +7,24 @@ let attr = (key, val) => {
   }
 }
 export default {
+  妖精织梦的乐园: {
+    2: {
+      title: '造成的伤害提高36%',
+      data: {
+        Dmg: 36
+      }
+    }
+  },
+  沉欢醉饮的海隅: {
+    2: [attr('dotDmg', 12), {
+      title: '装备者攻击力大于[_atk]时，持续伤害额外提高[dotDmg]%',
+      check: ({ attr }) => attr.atk >= 2400,
+      data: {
+        _atk: ({ attr }) => attr.atk < 3600 ? 2400 : 3600,
+        dotDmg: ({ attr }) => attr.atk < 3600 ? 12 : 24
+      }
+    }]
+  },
   云无留迹的过客: {
     2: attr('heal', 10)
   },
