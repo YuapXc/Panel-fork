@@ -16,7 +16,7 @@ export const details = [
     {
         title: "[E]风王铁锤·战技总伤害",
         params: { e: true },
-        dmg: ({ talent }, dmg) => dmg(talent.e["目标伤害"]+talent.e["相邻目标伤害"], "e")
+        dmg: ({ talent }, dmg) => dmg(talent.e["技能伤害"]+talent.e["相邻目标伤害"], "e")
     },
     {
         title: "[Q]誓约胜利之剑·终结技伤害",
