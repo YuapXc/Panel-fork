@@ -4,14 +4,14 @@ export const details = [
         dmg: ({ talent }, dmg) => dmg(talent.a["技能伤害"], "a")
     },
     {
-        title: "[A+]解放的金色王权伤害(三目标)",
-        params: { a: true },
-        dmg: ({ talent }, dmg) => dmg(talent.a2["技能伤害"]+talent.a2["额外伤害A"], "a")
-    },
-    {
         title: "[A+]解放的金色王权伤害(双目标)",
         params: { a: true },
-        dmg: ({ talent }, dmg) => dmg(talent.a2["技能伤害"]+talent.a2["额外伤害B"], "a")
+        dmg: ({ talent }, dmg) => dmg(talent.a2["技能伤害"]+talent.a2["额外伤害"], "a")
+    },
+    {
+        title: "[A+]解放的金色王权伤害(单目标)",
+        params: { a: true },
+        dmg: ({ talent }, dmg) => dmg(talent.a2["技能伤害"]+talent.a2["额外伤害2"], "a")
     },
     {
         title: "[E]风王铁锤·战技总伤害",
