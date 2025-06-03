@@ -1,8 +1,8 @@
 {
   "100600": {
     "id": 100600,
-    "key": "银狼加强v2",
-    "name": "银狼加强v2",
+    "key": "银狼加强v3",
+    "name": "银狼加强v3",
     "star": 5,
     "elem": "量子",
     "weapon": "虚无",
@@ -25,8 +25,8 @@
   },
   "121200": {
     "id": 121200,
-    "key": "镜流加强v2",
-    "name": "镜流加强v2",
+    "key": "镜流加强v3",
+    "name": "镜流加强v3",
     "star": 5,
     "elem": "冰",
     "weapon": "毁灭",
@@ -50,8 +50,8 @@
   },
   "1015": {
     "id": 1015,
-    "key": "Archerv2",
-    "name": "Archerv2",
+    "key": "Archerv3",
+    "name": "Archerv3",
     "star": 5,
     "elem": "量子",
     "weapon": "巡猎",
@@ -74,8 +74,8 @@
   },
   "1014": {
     "id": 1014,
-    "key": "Saberv2",
-    "name": "Saberv2",
+    "key": "Saberv3",
+    "name": "Saberv3",
     "star": 5,
     "elem": "风",
     "weapon": "毁灭",
@@ -99,8 +99,8 @@
   },
   "1408": {
     "id": 1408,
-    "key": "白厄v2",
-    "name": "白厄v2",
+    "key": "白厄v3",
+    "name": "白厄v3",
     "star": 5,
     "elem": "物理",
     "weapon": "毁灭",

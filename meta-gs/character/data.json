@@ -1,8 +1,8 @@
 {
   "10000115": {
     "id": 10000115,
-    "name": "塔利雅v4",
-    "abbr": "塔利雅v4",
+    "name": "塔利雅v5",
+    "abbr": "塔利雅v5",
     "star": 4,
     "elem": "hydro",
     "weapon": "sword",
@@ -18,8 +18,8 @@
   },
   "10000114": {
     "id": 10000114,
-    "name": "丝柯克v4",
-    "abbr": "丝柯克v4",
+    "name": "丝柯克v5",
+    "abbr": "丝柯克v5",
     "star": 5,
     "elem": "cryo",
     "weapon": "sword",

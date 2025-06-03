@@ -16,7 +16,7 @@ export default {
     }
   },
   沉欢醉饮的海隅: {
-    2: [attr('dotDmg', 12), {
+    2: [attr('atkPct', 12), {
       title: '装备者攻击力大于[_atk]时，持续伤害额外提高[dotDmg]%',
       check: ({ attr }) => attr.atk >= 2400,
       data: {
