@@ -14,7 +14,7 @@ export const details = [
     },
     {
         title: "[T]心眼(真)·追加伤害",
-        dmg: ({ talent }, dmg) => dmg(talent.q["技能伤害"], "t")
+        dmg: ({ talent }, dmg) => dmg(talent.t["技能伤害"], "t")
     }
 ]
 
