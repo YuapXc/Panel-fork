@@ -13,36 +13,32 @@ export const details = [
         dmg: ({ talent }, dmg) => dmg(talent.e["技能伤害"] + talent.e["相邻目标伤害"], "e")
     },
     {
-        title: "[E+]灾厄•弑魂焚诏反击伤害",
+        title: "[E+]灾厄•弑魂焚诏反击伤害(五目标)",
         params: { CQJS : true, e: true },
-        dmg: ({ talent, cons }, dmg) => dmg(talent.e1["技能伤害"] + ( 1 + 5 + ( cons > 3 ? 4 : 0)) * 0.2, "e")
+        dmg: ({ talent }, dmg) => dmg(talent.e1["技能伤害"], "e")
     },
     {
-        title: "[E+]灾厄•弑魂焚诏随机总伤害",
+        title: "[E+]灾厄•弑魂焚诏随机总伤害(五目标)",
         params: { CQJS : true, e: true },
-        dmg: ({ talent, cons }, dmg) => dmg(talent.e1["随机伤害"] * 4, "e")
-    },
-    {
-        title: "[E++]支柱•死星天裁伤害",
-        params: { CQJS : true },
-        dmg: ({ talent }, dmg) => dmg(talent.e2["技能伤害"], "e")
+        dmg: ({ talent }, dmg) => dmg(talent.e1["随机伤害"] * 4, "e")
     },
     {
         title: "[E++]支柱•死星天裁总伤害(4毁伤)",
         params: { CQJS : true },
-        dmg: ({ talent, cons }, dmg) => dmg((talent.e2["技能伤害"] + talent.e2["随机伤害"] * 4 + talent.e2["额外伤害"]) * ( 1 + (cons > 5 ? 0.2 : 0)), "e")
+        dmg: ({ talent }, dmg) => dmg(talent.e2["技能伤害"], "e")
     },
     {
-        title: "[Q]永劫燔世·终结技伤害",
+        title: "[Q]永劫燔世最后一击伤害",
+        params: { CQJS : true },
         dmg: ({ talent }, dmg) => dmg(talent.q["技能伤害"], "q")
     },
     {
         title: "[T]终结之始·秘技伤害",
-        dmg: ({ talent }, dmg) => dmg(2, "t")
+        dmg: ({ }, dmg) => dmg(2, "t")
     }
 ]
 
-export const defDmgIdx = 6
+export const defDmgIdx = 5
 export const mainAttr = "atk,cpct,cdmg,dmg"
 
 export const buffs = [
@@ -60,9 +56,16 @@ export const buffs = [
         }
     },
     {
+        title: "【弑魂之炽】：每层使反击伤害倍率提高原倍率的20%",
+        check: ({ params }) => params.e === true,
+        data: {
+            multi: ({ cons }) => ( 1 + 5 + ( cons > 3 ? 4 : 0 )) * 20
+        }
+    },
+    {
         title: "身承炎炬万千：造成的伤害提高[dmg]%",
         data: {
-            dmg: 40
+            dmg: 45
         }
     },
     {
@@ -72,18 +75,18 @@ export const buffs = [
         }
     },
     {
-        title: "1命：当【火种】达到上限时，使自身的物理属性抗性穿透提高[kx]%",
+        title: "1命：施放终结技时，暴击伤害提高[cdmg]%",
         cons: 1,
         data: {
-            kx: 15
+            cdmg: 40
         }
     },
     {
-        title: "2命：█████施放攻击造成的伤害为原伤害的120%",
+        title: "2命：卡厄斯兰那的物理属性抗性穿透提高[kx]%",
         cons: 2,
         check: ({ params }) => params.CQJS === true,
         data: {
-            dmg: 20
+            kx: 20
         }
     }
 ]

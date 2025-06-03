@@ -4,12 +4,12 @@ export const details = [
         dmg: ({ talent }, dmg) => dmg(talent.a["技能伤害"], "a")
     },
     {
-        title: "[A+]解放的金色王权伤害(双目标)",
+        title: "[A+]解放的金色王权(双目标)",
         params: { a: true },
         dmg: ({ talent }, dmg) => dmg(talent.a2["技能伤害"]+talent.a2["额外伤害"], "a")
     },
     {
-        title: "[A+]解放的金色王权伤害(单目标)",
+        title: "[A+]解放的金色王权(单目标)",
         params: { a: true },
         dmg: ({ talent }, dmg) => dmg(talent.a2["技能伤害"]+talent.a2["额外伤害2"], "a")
     },
@@ -21,15 +21,15 @@ export const details = [
     {
         title: "[Q]誓约胜利之剑·终结技伤害",
         params: { q: true },
-        dmg: ({ talent, cons }, dmg) => dmg(talent.q["技能伤害"], "q")
+        dmg: ({ talent }, dmg) => dmg(talent.q["技能伤害"], "q")
     },
     {
         title: "[Q]终结技随机伤害十次累加",
-        dmg: ({ talent, cons }, dmg) => dmg(talent.q["随机伤害"] * 10, "q")
+        dmg: ({ talent }, dmg) => dmg(talent.q["随机伤害"] * 10, "q")
     }
 ]
 
-export const defDmgIdx = 3
+export const defDmgIdx = 4
 export const mainAttr = "atk,cpct,cdmg,dmg"
 
 export const buffs = [
@@ -61,37 +61,28 @@ export const buffs = [
         title: "1命：造成的终结技伤害提高[qDmg]%",
         cons: 1,
         data: {
-            qDmg: 50
+            qDmg: 60
         }
     },
     {
-        title: "2命：【解放的金色王权】和【风王铁锤】造成的暴击伤害提高[cdmg]%",
-        cons: 2,
-        check: ({ params }) => params.a === true || params.e === true,
-        data: {
-            cdmg: 50
-        }
-    },
-    {
-        title: "2命：每获得1点【炉心共鸣】，额外使造成的暴击伤害提高5%，可叠加10次",
+        title: "2命：每获得1点【炉心共鸣】，使Saber造成的伤害无视目标1%的防御力，该效果可叠加15次",
         cons: 2,
         data: {
-            cdmg: 5 * 10
+            ignore: 1 * 15
         }
     },
     {
         title: "4命：风属性抗性穿透提高[kx]%",
         cons: 4,
         data: {
-            kx: 4
+            kx: 8
         }
     },
     {
-        title: "4命：施放终结技后，风属性抗性穿透提高4%，可叠加4次。",
+        title: "4命：施放终结技后，风属性抗性穿透提高4%，可叠加3次。",
         cons: 4,
-        check: ({ params }) => params.q === true,
         data: {
-            kx: 4 * 4
+            kx: 4 * 3
         }
     },
     {
