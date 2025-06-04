@@ -30,10 +30,9 @@ export const buffs = [{
     enemySpeed: ({ talent }) => talent.t['速度降低'] * 100
   }
 }, {
-  title: '银狼战技：添加弱点降低对应属性抗性[kx]%，全属性抗性降低[allKx]%',
+  title: '银狼战技：添加弱点降低对应属性抗性，全属性抗性降低，共降低[kx]%',
   data: {
-    kx: 20,
-    allKx: ({ talent }) => talent.e['全属性抗性降低'] * 100
+    kx: ({ talent }) => talent.e['全属性抗性降低'] * 100 + 20
   }
 }, {
   title: '银狼终结技：降低敌方防御力[enemyDef]%',
