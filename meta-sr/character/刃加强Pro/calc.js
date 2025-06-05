@@ -7,7 +7,7 @@ export const details = [{
   }
 }, {
   title: '强化普攻(单体)',
-  params: { ebuff: true },
+  params: { ebuff: true, a: true },
   dmg: ({ talent, attr, calc }, { basic }) => {
     const td1 = talent.a2['生命倍率']
     const hp = calc(attr.hp)
@@ -15,7 +15,7 @@ export const details = [{
   }
 }, {
   title: '强化普攻(扩散)',
-  params: { ebuff: true },
+  params: { ebuff: true,a: true },
   dmg: ({ talent, attr, calc }, { basic }) => {
     const td1 = talent.a2['生命倍率'] + talent.a2['生命倍率·相邻目标'] * 2
     const hp = calc(attr.hp)
@@ -69,6 +69,13 @@ export const buffs = [{
   cons: 1,
   data: {
     qPlus: ({ attr, calc }) => 1.5 * calc(attr.hp) * 0.9
+  }
+}, {
+  check: ({ params }) => params.a === true,
+  title: '刃1命：强化普攻对指定敌方单体造成伤害值提高[aPlus]',
+  cons: 1,
+  data: {
+    aPlus: ({ attr, calc }) => 1.5 * calc(attr.hp) * 0.9 * 2
   }
 }, {
   check: ({ params }) => params.ebuff === true,
