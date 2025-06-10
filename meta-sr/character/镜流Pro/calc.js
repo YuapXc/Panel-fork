@@ -15,7 +15,7 @@ export const details = [{
 }, {
   title: '[Q+]昙华生灭转魄伤害(三目标)',
   params: { strength: true, q: true },
-  dmg: ({ talent, calc, attr }, { basic }) => basic(talent.q['目标伤害'] * calc(attr.hp) + 0.8 * calc(attr.hp) * (cons > 0 ? 1 : 0) + talent.q['相邻目标伤害'] * calc(attr.hp), 'q')
+  dmg: ({ talent, calc, attr, cons }, { basic }) => basic(talent.q['目标伤害'] * calc(attr.hp) + 0.8 * calc(attr.hp) * (cons > 0 ? 1 : 0) + talent.q['相邻目标伤害'] * calc(attr.hp), 'q')
 }]
 
 export const defDmgIdx = 4

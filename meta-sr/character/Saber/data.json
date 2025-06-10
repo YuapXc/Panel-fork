@@ -1,7 +1,7 @@
 {
   "id": 1014,
-  "key": "Saberv3",
-  "name": "Saberv3",
+  "key": "Saberv4",
+  "name": "Saberv4",
   "star": 5,
   "elem": "风",
   "allegiance": "？？？",
@@ -723,7 +723,7 @@
   "cons": {
     "1": {
       "name": "失落的白垩坚城",
-      "desc": "Saber造成的终结技伤害提高60%。Saber的回合结束时，获得1点【炉心共鸣】。"
+      "desc": "Saber造成的终结技伤害提高60%。Saber施放普攻或战技后，获得1点【炉心共鸣】。"
     },
     "2": {
       "name": "尘封的圆桌誓言",
