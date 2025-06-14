@@ -7,7 +7,7 @@ export const details = [{
 }, {
   title: '[E+]寒川映月伤害(三目标)',
   params: { strength: true },
-  dmg: ({ talent, calc, attr }, { basic }) => basic(talent.e2['目标伤害'] * calc(attr.hp) + talent.e2['相邻目标伤害'] * calc(attr.hp), 'e')
+  dmg: ({ talent, calc, attr, cons }, { basic }) => basic(talent.e2['目标伤害'] * calc(attr.hp) + talent.e2['相邻目标伤害'] * calc(attr.hp) + 0.8 * calc(attr.hp) * (cons > 0 ? 1 : 0), 'e')
 }, {
   title: '[Q]昙华生灭，天河泻梦(三目标)',
   params: { q: true },
@@ -54,7 +54,21 @@ export const buffs = [{
   cons: 6,
   check: ({ params }) => params.strength === true,
   data: {
-    kx: 20
+    kx: 30
+  }
+}, {
+  title: '行迹-死境：转魄状态下，造成的终结技伤害提高[qDmg]%',
+  tree: 1,
+  check: ({ params }) => params.strength === true,
+  data: {
+    qDmg: 20
+  }
+}, {
+  title: '行迹-霜魄：获得朔望时若已达到上限，镜流下一次攻击无视目标[ignore]%的防御力',
+  tree: 3,
+  check: ({ params }) => params.strength === true,
+  data: {
+    ignore: 25
   }
 }]
 
