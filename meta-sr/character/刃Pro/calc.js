@@ -75,7 +75,7 @@ export const buffs = [{
   title: '刃1命：强化普攻对指定敌方单体造成伤害值提高[aPlus]',
   cons: 1,
   data: {
-    aPlus: ({ attr, calc }) => 1.5 * calc(attr.hp) * 0.9 * 2
+    aPlus: ({ attr, calc }) => 1.5 * calc(attr.hp) * 0.9
   }
 }, {
   check: ({ params }) => params.ebuff === true,

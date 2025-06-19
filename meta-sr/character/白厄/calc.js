@@ -45,7 +45,7 @@ export const buffs = [
     {
         title: "[天赋]此身为炬：暴击伤害提高[cdmg]%",
         data: {
-            cdmg: ({ talent }) => talent.t["暴击伤害提高"] * 100
+            cdmg: ({ talent }) => talent.t["暴伤提高"] * 100
         }
     },
     {
