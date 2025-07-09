@@ -1,7 +1,7 @@
 export default function (staticIdx, keyIdx) {
   return {
     以世界之名: [
-      keyIdx('对陷入负面效果的敌人伤害提高[dmg]%，释放战技的功力提高[atkPct]%', { dmg: 1, atkPct: 3 })
+      keyIdx('对陷入负面效果的敌人伤害提高[dmg]%，释放战技的攻击力提高[atkPct]%', { dmg: 1, atkPct: 3 })
     ],
     假日浴场大冒险: [
       keyIdx('使装备者造成的伤害提高[dmg]%，敌方受到的伤害提高[enemydmg]%', { dmg: 1, enemydmg: 2})
@@ -118,6 +118,18 @@ export default function (staticIdx, keyIdx) {
     长路终有归途: [
       staticIdx(1, 'stance'),
       keyIdx('【焚灼】状态下，敌方目标受到的击破伤害提高[breakEnemydmg]%', 'breakEnemydmg', 2)
+    ],
+    海洋为何而歌: [
+      staticIdx(1, 'effPct'),
+      (tables) => {
+        return {
+          title: '【魂迷】状态下，敌方目标受到的持续伤害提高[dotenemydmg]%，攻击者速度提高[speedPct]%',
+          data: {
+            dotenemydmg: tables[2] * 6,
+            speedPct: tables[3]
+          }
+        }
+      }
     ]
   }
 }
