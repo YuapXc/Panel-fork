@@ -1,9 +1,10 @@
 export default function (step, staticStep) {
   return {
     支离轮光: {
-      title: '攻击力提高[atkPct]%',
+      title: '施放元素战技或元素爆发后攻击力提升[atkPct]%,创造护盾后月感电伤害提升[lunarCharged]',
       refine: {
-        atkPct: [24,30,36,42,48]
+        atkPct: step(24),
+        lunarCharged: step(40)
       }
     },
     白缨枪: {

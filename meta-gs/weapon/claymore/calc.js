@@ -1,9 +1,10 @@
 export default function (step, staticStep) {
   return {
     拾慧铸熔: {
-      title: '元素精通提升[mastery]%',
+      check: ({ element }) => ['风', '水', '雷', '草'].includes(element),
+      title: '触发感电、月感电或绽放反应时，元素精通提升[mastery]',
       refine: {
-        mastery: [60,75,90,105,120]
+        mastery: step(60)
       }
     },
     沐浴龙血的剑: {
