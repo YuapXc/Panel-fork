@@ -1,5 +1,11 @@
 export default function (step, staticStep) {
   return {
+    万能钥匙: {
+      title: '元素精通提升[mastery]%',
+      data: {
+        mastery: ({ params, refine }) => step(60)[refine] * (params.Moonsign || 0) >= 2 ? 2 : 1
+      }
+    },
     拾慧铸熔: {
       check: ({ element }) => ['风', '水', '雷', '草'].includes(element),
       title: '触发感电、月感电或绽放反应时，元素精通提升[mastery]',
